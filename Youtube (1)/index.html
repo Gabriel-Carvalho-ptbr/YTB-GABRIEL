@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>YouTube Dark Clone</title>
+  <link rel="stylesheet" href="CSS/Style.css" />
+  <link href="https://unpkg.com/lucide-static@0.278.0/font/lucide.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="navbar">
+    <div class="navbar-left">
+      <i class="lucide-menu"></i>
+      <div class="navbar-logo">
+        <img src="youicon.png" alt="YouTube" />
+      </div>
+    </div>
+    <div class="navbar-center">
+      <div class="search-bar">
+        <input type="text" placeholder="Pesquisar" />
+        <button><i class="lucide-search"></i></button>
+      </div>
+      <button class="mic-button"><i class="lucide-mic"></i></button>
+    </div>
+    <div class="navbar-right">
+      <i class="lucide-video"></i>
+      <i class="lucide-bell"></i>
+      <div class="avatar">
+        <img src="Gabriel.jpeg" class="avatar" alt="Avatar" />
+      </div>
+    </div>
+  </div>
+
+  <div class="main">
+    <div class="main-content">
+      <div class="video-section">
+        <div class="video-container">
+          <iframe
+            src="https://www.youtube.com/embed/pRsfShtUDbA"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+          </iframe>
+        </div>
+        <div class="video-info">
+          <h2>MINECRAFT NO HORA DE AVENTURA</h2>
+          <div class="video-stats">10mil visualizações &bull; há 1 ano atrás</div>
+          <div class="actions">
+            <button><i class="lucide-thumbs-up"></i>Curtir</button>
+            <button><i class="lucide-thumbs-down"></i>Não gostei</button>
+            <button><i class="lucide-share"></i>Compartilhar</button>
+            <button><i class="lucide-plus"></i>Salvar</button>
+          </div>
+          <div class="channel-info">
+            <div class="channel-avatar"></div>
+            <div class="channel-name">HORA DE AVENTURA MINECRAFT</div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Recomendações (Agora será preenchido pelo JavaScript) -->
+      <div class="recommendations" id="recommendations">
+        <!-- Aqui o JavaScript vai adicionar os vídeos recomendados -->
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
